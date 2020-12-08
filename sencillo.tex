@@ -1,0 +1,174 @@
+\documentclass[12pt]{article}
+\usepackage{caption}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{enumerate}
+\usepackage[spanish]{babel}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{xcolor}
+\usepackage{hyperref}%compilar 2 veces
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{subfig}%figuras una alado de otraa
+\usepackage{float}
+\definecolor{commentsColor}{rgb}{0.13, 0.55, 0.13}
+\definecolor{keywordsColor}{rgb}{0.000000, 0.000000, 0.635294}
+\definecolor{stringColor}{rgb}{0.558215, 0.000000, 0.135316}
+\definecolor{numerolineas}{rgb}{0.41,0.41,0.41}
+
+\usepackage{verbatim}%coemntario begin{} end
+
+\usepackage{fancyhdr}%activar para usar encabezados esttilos funcy
+
+
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{referencias/referencias.bib}
+
+%\usepackage[top=1.5cm,bottom=1.0cm,left=1.25cm,right=1.25cm]{geometry}%para todos las paginas
+
+
+\lstset{
+        tabsize=2, % tab = 2 espacios
+        backgroundcolor=\color[HTML]{F0F0F0}, % color de fondo
+        captionpos=b, % posición de pie de código, b=debajo
+        basicstyle=\ttfamily, % estilo de letra general
+        columns=fixed, % columnas alineadas
+        extendedchars=true, % ASCII extendido
+        breaklines=true, % partir líneas
+        prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}}, % marcar final de línea con flecha
+        showtabs=false, % no marcar tabulación
+        showspaces=false, % no marcar espacios
+        keywordstyle=\bfseries\color[HTML]{007020}, % estilo de palabras clave
+        commentstyle=\itshape\color[HTML]{60A0B0}, % estilo de comentarios
+        stringstyle=\color[HTML]{4070A0}, % estilo de strings
+}
+
+\lstdefinestyle{abaqusPython}{
+        language=python,
+		% Palabras clave extra
+        morekeywords={CONTINUOUS,NUMBER,MESH,par,name,ParStudy,
+		template,define,sample,combine, generate},
+		% Delimitadores extra, s porque hay uno a cada lado
+        moredelim=[s][\ttfamily\color{magenta}]{<}{>},
+}
+
+
+
+\begin{document}
+%\newgeometry{bottom=2.5cm,top=2.6cm,left=2.5cm,right=2.5cm}
+%\restoregeometry
+%\includepdf{9}
+
+%
+%para el report 
+
+\begin{titlepage}
+
+	\centering
+	\includegraphics[width=0.15\textwidth]{imagenes/unsa.png}\par\vspace{1cm}
+	{\scshape\LARGE Universidad Nacional de San Agustin \par}
+	\vspace{1cm}
+	{\scshape\Large Proyecto \par}
+	\vspace{1.5cm}
+	{\huge\bfseries Titulo\par}
+	\vspace{2cm}
+	{\Large\itshape Bejar Merma Angel Andres\par}
+	\vfill
+	Docente \par
+	Dr. Nombre docente \textsc{}
+
+	\vfill
+
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
+
+%para el report
+
+
+
+
+
+%\begin{abstract}
+
+
+
+%\end{abstract}
+
+%\vspace{5mm} %espacio vertical usar en imagen
+
+
+
+\section{Parte 1}
+
+\begin{enumerate}[(a)]
+
+\item 
+\item 
+
+\item 
+\item 
+
+\item 
+\end{enumerate}
+
+
+\begin{figure}[H]%estricto
+\centering
+%\includegraphics[width=15cm]{imagenes/.png}
+\caption{}
+\label{fig:1}
+\end{figure}
+
+%\lstinputlisting[style=abaqusPython]{codigo.py}
+
+
+\begin{figure}[H]%estricto
+\centering
+%\includegraphics[width=15cm]{imagenes/.png}
+\caption*{}
+
+\end{figure}
+\newpage
+\section{Desarrollo}
+\newpage
+
+
+
+\section{Codigo}
+
+
+%\end{samepage}
+
+
+
+
+
+
+
+
+
+\newpage
+\section{Conclusion}
+
+
+
+
+	
+
+
+\vspace{20 mm}
+
+
+
+
+
+
+\printbibliography
+
+\end{document}
+
