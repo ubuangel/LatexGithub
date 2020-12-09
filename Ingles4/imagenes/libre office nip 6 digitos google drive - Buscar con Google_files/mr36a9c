@@ -1,0 +1,11 @@
+try{
+s_f("r36a9c");
+var s__Db=s_N("r36a9c");
+var s_0Db=function(a){return null!=a&&0<a.getBoundingClientRect().width&&0<a.getBoundingClientRect().height?(a=window.getComputedStyle(a,null),"none"!==a.display&&"hidden"!==a.visibility&&"auto"===a.clip):!1},s_1Db=function(a){s_h.call(this,a.Ja)};s_m(s_1Db,s_h);s_1Db.Ga=s_h.Ga;
+s_1Db.prototype.kxc=function(){var a=this.Ea("BKxS1e").el();s_S(a);a=this.WB().documentElement;var b=s_Ai(a).find(".ItQZPd").find('[role="heading"], h1, h2, h3').el();if(b)b.tabIndex="-1",b.onblur=function(c){return c.target.removeAttribute("tabIndex")},b.focus();else{a=s_Ai(a).find('[role="heading"], h1, h2, h3').filter(s_0Db).first();if(!s_Wk(a.el())){if(null==a.Ld("aria-label")&&null==a.Ld("aria-describedby")){b=a.parent();if(s_0Db(b.el())&&"A"==b.el().tagName){b.focus();return}b=a.children().filter(s_0Db);
+if(1==b.size()&&"A"==b.first().el().tagName){b.first().focus();return}}a.el().tabIndex="-1";a.el().onblur=function(c){return c.target.removeAttribute("tabIndex")}}a.focus()}};s_O(s_1Db.prototype,"i3viod",function(){return this.kxc});s_Q(s__Db,s_1Db);
+
+s_g();
+
+}catch(e){_DumpException(e)}
+// Google Inc.
